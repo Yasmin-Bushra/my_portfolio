@@ -177,6 +177,10 @@ button {
   color: #c6b6b0 !important;
 }
 
+[data-theme='dark'] #about p:not(.editorial) {
+  color: #e0d4cc !important;
+}
+
 [data-theme='dark'] [class*='border-[#E8D8CF]'],
 [data-theme='dark'] [class*='border-[#E9DCD3]'],
 [data-theme='dark'] [class*='border-[#282329]/'] {
@@ -245,7 +249,7 @@ button {
 }
 
 .hero-cta {
-  box-shadow: 0 8px 22px rgb(17 89 167 / 24%);
+  box-shadow: 0 6px 18px rgb(217 45 80 / 10%);
 }
 
 .hero-sparkle {

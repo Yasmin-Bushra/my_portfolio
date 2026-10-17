@@ -26,9 +26,9 @@ export default function Hero() {
     >
       {/* Introduction */}
       <div className="relative min-w-0">
-        <p className="mb-6 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#716775] sm:text-[11px]">
+        <p className="mb-6 flex items-center gap-3 text-xs font-semibold tracking-[0.02em] text-[#716775] sm:text-sm">
           <span className="h-px w-8 shrink-0 bg-[#D92D50]" />
-          <span className="rounded-full border border-[#D92D50]/20 bg-white/70 px-3 py-1 font-mono text-[9px] tracking-[0.08em] text-[#A51F3A]">&lt;full-stack developer /&gt;</span>
+          <span className="rounded-full border border-[#D92D50]/30 bg-[#FCE7EC]/75 px-4 py-1.5 font-semibold text-[#A51F3A] shadow-[0_3px_12px_rgba(217,45,80,0.08)]">Full-stack developer</span>
         </p>
 
         <h1
@@ -50,7 +50,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
-            <Button href="#projects" className="hero-cta group">
+            <Button href="#projects" className="hero-cta group !min-h-11 !gap-4 !rounded-full !border !border-[#D92D50]/30 !bg-[#FCE7EC] !px-5 !text-[#7E2940] !shadow-none hover:!-translate-y-0.5 hover:!border-[#D92D50]/60 hover:!bg-[#F8D7E1]">
               Explore my work
               <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
             </Button>
