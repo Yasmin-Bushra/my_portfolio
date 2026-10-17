@@ -1,4 +1,4 @@
-import type { AnchorHTMLAttributes, PropsWithChildren } from 'react';
+﻿import type { AnchorHTMLAttributes, PropsWithChildren } from 'react';
 
 type ButtonProps = PropsWithChildren<
   AnchorHTMLAttributes<HTMLAnchorElement> & { variant?: 'dark' | 'plain' }
@@ -7,7 +7,7 @@ type ButtonProps = PropsWithChildren<
 export default function Button({ children, className = '', variant = 'dark', ...props }: ButtonProps) {
   return (
     <a
-      className={`inline-flex min-h-12 items-center justify-center gap-3 px-5 text-sm font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#20211F] ${variant === 'dark' ? 'bg-[#E65336] text-white hover:bg-[#C4422A]' : 'border border-[#C9C5BA] hover:border-[#E65336] hover:text-[#C4422A]'} ${className}`}
+      className={`inline-flex min-h-12 items-center justify-center gap-3 rounded-full px-6 text-sm font-medium transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#282329] ${variant === 'dark' ? 'bg-[#D92D50] text-white hover:-translate-y-0.5 hover:bg-[#A51F3A]' : 'rounded-full border border-[#E8D8CF] hover:border-[#D92D50] hover:text-[#A51F3A]'} ${className}`}
       {...props}
     >
       {children}

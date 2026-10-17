@@ -1,23 +1,25 @@
-
+﻿
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap');
 
 @import "tailwindcss";
 
 :root {
   font-family: 'Inter', sans-serif;
-  color: #20211f;
-  background: #f3f0e8;
+  color: #282329;
+  background: #FFF8F0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-paper: #f3f0e8;
-  --color-ink: #20211f;
-  --color-accent: #e65336;
-  --color-stone: #c9c5ba;
-  --color-line: #e5e1d8;
+  --color-paper: #FFF8F0;
+  --color-ink: #282329;
+  --color-accent: #D92D50;
+  --color-rose: #F3A7BD;
+  --color-butter: #F5D96B;
+  --color-stone: #E8D8CF;
+  --color-line: #E9DCD3;
 }
 
 * {
@@ -32,6 +34,12 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #FFF8F0;
+  background-image:
+    radial-gradient(ellipse at 9% 8%, rgb(243 167 189 / 14%), transparent 28rem),
+    radial-gradient(ellipse at 92% 24%, rgb(217 45 80 / 8%), transparent 30rem),
+    radial-gradient(ellipse at 70% 86%, rgb(245 217 107 / 9%), transparent 26rem);
+  background-attachment: fixed;
 }
 
 body,
@@ -70,3 +78,74 @@ button {
     transition-duration: 0.01ms !important;
   }
 }
+
+.portfolio-shell {
+  isolation: isolate;
+}
+
+.portfolio-glow {
+  z-index: 0;
+  background:
+    radial-gradient(ellipse at 8% 4%, rgb(245 217 107 / 37%), transparent 34%),
+    radial-gradient(ellipse at 92% 20%, rgb(243 167 189 / 28%), transparent 31%),
+    radial-gradient(ellipse at 68% 82%, rgb(217 45 80 / 8%), transparent 28%),
+    linear-gradient(135deg, #FFF8F0 0%, #FFF8F0 55%, #FCE7EC 100%);
+}
+
+.hero-splash {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-splash::before {
+  position: absolute;
+  z-index: -1;
+  top: 3.5rem;
+  right: -4rem;
+  width: min(48vw, 42rem);
+  aspect-ratio: 1;
+  border-radius: 48% 52% 62% 38% / 42% 43% 57% 58%;
+  background:
+    radial-gradient(circle at 32% 32%, rgb(255 255 255 / 78%), transparent 28%),
+    radial-gradient(circle at 62% 63%, rgb(245 217 107 / 72%), transparent 58%),
+    linear-gradient(145deg, rgb(217 45 80 / 12%), rgb(243 167 189 / 44%));
+  content: '';
+  filter: blur(1px);
+  pointer-events: none;
+  transform: rotate(-12deg);
+}
+
+.hero-title {
+  text-wrap: balance;
+  text-shadow: 0 2px 0 rgb(255 255 255 / 42%);
+}
+
+.hero-cta {
+  box-shadow: 0 8px 22px rgb(17 89 167 / 24%);
+}
+
+.hero-sparkle {
+  display: inline-block;
+  margin-left: 0.08em;
+  font-size: 0.58em;
+  vertical-align: top;
+  animation: sparkle-turn 18s linear infinite;
+}
+
+@keyframes sparkle-turn {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 640px) {
+  .hero-splash::before {
+    top: 6rem;
+    right: -12rem;
+    width: 27rem;
+    opacity: 0.72;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-sparkle { animation: none; }
+}
+

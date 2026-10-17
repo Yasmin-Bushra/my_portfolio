@@ -1,32 +1,32 @@
-
+﻿
 import { projects } from '../data/projects';
 
 const visualStyles = [
   {
-    background: 'bg-[#E65336]',
-    foreground: 'text-[#F3F0E8]',
-    accent: 'bg-[#F3F0E8]',
+    background: 'bg-[#D92D50]',
+    foreground: 'text-[#FFF8F0]',
+    accent: 'bg-[#FFF8F0]',
     label: 'CARE / COMMUNITY',
     art: 'care',
   },
   {
-    background: 'bg-[#DCE2D0]',
-    foreground: 'text-[#293126]',
-    accent: 'bg-[#65734F]',
+    background: 'bg-[#F5D96B]',
+    foreground: 'text-[#282329]',
+    accent: 'bg-[#D92D50]',
     label: 'BEAUTY / BOOKING',
     art: 'beauty',
   },
   {
-    background: 'bg-[#D9E2EB]',
-    foreground: 'text-[#263B51]',
-    accent: 'bg-[#426A91]',
+    background: 'bg-[#F3A7BD]',
+    foreground: 'text-[#282329]',
+    accent: 'bg-[#D92D50]',
     label: 'PUBLIC SERVICE',
     art: 'workflow',
   },
   {
-    background: 'bg-[#E5D9E5]',
-    foreground: 'text-[#4B354D]',
-    accent: 'bg-[#805D83]',
+    background: 'bg-[#F3A7BD]',
+    foreground: 'text-[#282329]',
+    accent: 'bg-[#D92D50]',
     label: 'SPACE / SCIENCE',
     art: 'space',
   },
@@ -49,7 +49,7 @@ function ProjectPreview({
     <div
       className={`project-preview group/preview relative aspect-[1.8/1] overflow-hidden ${background} ${foreground}`}
     >
-      {/* Temporary artwork — replace this preview with a real screenshot later. */}
+      {/* Temporary artwork â€” replace this preview with a real screenshot later. */}
       <div className="absolute inset-0 p-4 sm:p-5">
         <div className="flex items-center justify-between">
           <span className="text-[9px] font-semibold uppercase tracking-[0.18em] sm:text-[10px]">
@@ -77,7 +77,7 @@ function ProjectPreview({
           <>
             <div className="absolute -right-3 top-7 h-28 w-28 rotate-12 rounded-[40%] bg-[#A7B493] transition-transform duration-500 group-hover/preview:rotate-45 sm:h-36 sm:w-36" />
             <div className="absolute right-7 top-10 h-20 w-20 rounded-full border border-current/50 transition-transform duration-500 group-hover/preview:-rotate-12 sm:right-10 sm:top-10 sm:h-24 sm:w-24" />
-            <div className="absolute right-14 top-14 h-10 w-10 rounded-full bg-[#E5D9E5] transition-transform duration-500 group-hover/preview:scale-125 sm:right-[4.5rem] sm:top-16 sm:h-12 sm:w-12" />
+            <div className="absolute right-14 top-14 h-10 w-10 rounded-full bg-[#FCE7EC] transition-transform duration-500 group-hover/preview:scale-125 sm:right-[4.5rem] sm:top-16 sm:h-12 sm:w-12" />
             <span className="absolute bottom-3 left-4 font-serif text-4xl opacity-30 sm:bottom-4 sm:left-5 sm:text-5xl">
               g.
             </span>
@@ -101,7 +101,7 @@ function ProjectPreview({
             <div className="absolute right-10 top-12 h-20 w-20 rotate-45 border border-current/50 transition-transform duration-500 group-hover/preview:rotate-90 sm:right-14 sm:top-12 sm:h-24 sm:w-24" />
             <div className={`absolute right-[4.25rem] top-[3.25rem] h-10 w-10 ${accent} transition-transform duration-500 group-hover/preview:translate-x-2 sm:right-[4.75rem] sm:top-[3.75rem] sm:h-12 sm:w-12`} />
             <span className="absolute bottom-3 left-4 font-serif text-4xl opacity-30 sm:bottom-4 sm:left-5 sm:text-5xl">
-              ↗
+              â†—
             </span>
           </>
         )}
@@ -113,13 +113,13 @@ function ProjectPreview({
             <div className="absolute right-12 top-12 h-16 w-16 rounded-full border border-current/50 sm:right-14 sm:top-12 sm:h-20 sm:w-20" />
             <div className={`absolute right-[4.25rem] top-[3.5rem] h-3 w-3 rounded-full ${accent} transition-transform duration-500 group-hover/preview:translate-x-3 group-hover/preview:-translate-y-2 sm:right-[5rem] sm:top-[3.75rem]`} />
             <span className="absolute bottom-3 left-4 font-serif text-4xl opacity-30 sm:bottom-4 sm:left-5 sm:text-5xl">
-              ✳
+              âœ³
             </span>
           </>
         )}
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-[#20211F]/0 transition-colors duration-300 group-hover/preview:bg-[#20211F]/[0.04]" />
+      <div className="pointer-events-none absolute inset-0 bg-[#282329]/0 transition-colors duration-300 group-hover/preview:bg-[#282329]/[0.04]" />
     </div>
   );
 }
@@ -128,21 +128,21 @@ export default function SelectedWork() {
   return (
     <section
       id="projects"
-      className="bg-[#F3F0E8] px-5 py-14 sm:px-8 sm:py-16 lg:px-12"
+      className="bg-[#FFF8F0] px-5 py-14 sm:px-8 sm:py-16 lg:px-12"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mb-7 flex items-end justify-between gap-4 sm:mb-9">
           <div>
-            <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-[#E65336]">
+            <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-[#D92D50]">
               A selection of my work
             </p>
-            <h2 className="font-serif text-3xl tracking-tight text-[#20211F] sm:text-4xl">
+            <h2 className="font-serif text-3xl tracking-tight text-[#282329] sm:text-4xl">
               Selected projects
-              <span className="text-[#E65336]">.</span>
+              <span className="text-[#D92D50]">.</span>
             </h2>
           </div>
 
-          <p className="hidden max-w-52 text-right text-sm leading-relaxed text-[#20211F]/60 sm:block">
+          <p className="hidden max-w-52 text-right text-sm leading-relaxed text-[#282329]/60 sm:block">
             Ideas shaped into thoughtful digital experiences.
           </p>
         </div>
@@ -154,7 +154,7 @@ export default function SelectedWork() {
             return (
               <article
                 key={project.name}
-                className="group min-w-0 overflow-hidden border border-[#20211F]/10 bg-[#FAF8F2] transition-all duration-300 hover:-translate-y-1 hover:border-[#20211F]/25"
+                className="group min-w-0 overflow-hidden border border-[#282329]/10 bg-[#FBF7F2] transition-all duration-300 hover:-translate-y-1 hover:border-[#282329]/25"
               >
                 <ProjectPreview
                   art={style.art}
@@ -166,28 +166,28 @@ export default function SelectedWork() {
 
                 <div className="p-5 sm:p-6">
                   <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
-                    <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-[#20211F]/55">
+                    <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-[#282329]/55">
                       {project.category}
                     </span>
-                    <span className="text-[10px] text-[#20211F]/50">
+                    <span className="text-[10px] text-[#282329]/50">
                       {project.number}
                     </span>
                   </div>
 
-                  <h3 className="text-lg font-semibold leading-snug tracking-tight text-[#20211F]">
+                  <h3 className="text-lg font-semibold leading-snug tracking-tight text-[#282329]">
                     {project.name}
                   </h3>
 
-                  <p className="mt-2 text-sm leading-relaxed text-[#20211F]/70">
+                  <p className="mt-2 text-sm leading-relaxed text-[#282329]/70">
                     {project.description}
                   </p>
 
-                  <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[#20211F]/10 pt-3">
-                    <span className="text-xs text-[#20211F]/60">
+                  <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-[#282329]/10 pt-3">
+                    <span className="text-xs text-[#282329]/60">
                       {project.role}
                     </span>
-                    <span className="text-xs font-medium text-[#E65336]">
-                      {project.technologies.join(' · ')}
+                    <span className="text-xs font-medium text-[#D92D50]">
+                      {project.technologies.join(' Â· ')}
                     </span>
                   </div>
                 </div>

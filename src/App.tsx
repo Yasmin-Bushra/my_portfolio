@@ -1,4 +1,4 @@
-import Footer from './components/Footer';
+﻿import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import About from './sections/About';
 import Contact from './sections/Contact';
@@ -8,7 +8,9 @@ import Skills from './sections/Skills';
 
 export default function App() {
   return (
-    <div id="top" className="min-h-screen bg-[#F3F0E8] text-[#20211F]">
+    <div id="top" className="portfolio-shell relative min-h-screen overflow-hidden bg-[#FFF8F0] text-[#282329]">
+      <div aria-hidden="true" className="portfolio-glow pointer-events-none absolute inset-0" />
+      <div className="relative z-10">
       <Navbar />
       <main>
         <Hero />
@@ -18,6 +20,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      </div>
     </div>
   );
 }
