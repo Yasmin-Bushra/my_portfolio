@@ -7,13 +7,13 @@ const highlights = [
   },
   {
     number: '02',
-    title: 'Thoughtful user experiences',
-    description: 'Creating clear, intuitive interfaces.',
+    title: 'User-focused design',
+    description: 'Making web applications clear and easy to use.',
   },
   {
     number: '03',
-    title: 'Problem solving',
-    description: 'Understanding the problem before the solution.',
+    title: 'Practical problem solving',
+    description: 'Turning real needs into working solutions.',
   },
 ];
 
@@ -38,50 +38,36 @@ export default function About() {
             </h2>
           </div>
 
-          <span className="hidden text-[10px] font-medium uppercase tracking-[0.16em] text-[#716775] sm:block">
-            Yasmin Bushra / 01
-          </span>
+          
         </div>
 
         <div className="grid items-center gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-12">
-          {/* Portrait placeholder â€” replace with your photo later. */}
-          <div className="relative mx-auto w-full max-w-[300px] lg:max-w-none">
+          <div className="relative mx-auto w-full max-w-[300px] lg:max-w-[360px]">
             <div className="absolute -bottom-2 -left-2 h-full w-full border border-[#D92D50]/50" />
 
-            <div className="relative flex aspect-[4/4.2] items-center justify-center overflow-hidden bg-[#DBC9D2]">
-              <div className="absolute -right-12 -top-12 h-44 w-44 rounded-full border border-[#282329]/15" />
-              <div className="absolute -right-5 -top-5 h-32 w-32 rounded-full border border-[#282329]/20" />
+            <div className="relative aspect-[4/4.6] overflow-hidden rounded-t-[48%] bg-[#DBC9D2]">
+              <img
+                src="/images/projects/yasmin.jpg"
+                alt="Yasmin Bushra"
+                className="h-full w-full object-cover"
+              />
+              <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#282329]/35 via-transparent to-transparent" />
 
-              <div className="relative flex flex-col items-center gap-3">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full border border-[#282329]/20 font-serif text-3xl text-[#282329]">
-                  YB
-                </div>
-                <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#716775]">
-                  Your portrait goes here
-                </p>
-              </div>
-
-              <span className="absolute bottom-4 left-4 text-[9px] font-semibold uppercase tracking-[0.15em] text-[#282329]/65">
-                Information Systems Â· 2026
-              </span>
-              <span className="absolute right-4 top-4 font-serif text-xl text-[#D92D50]">
-                âœ³
-              </span>
             </div>
           </div>
 
           {/* Introduction */}
           <div>
             <p className="editorial text-2xl leading-tight tracking-[-0.035em] text-[#282329] sm:text-3xl lg:text-4xl">
-              A little about my background and approach.
+              I bring ideas to life through web apps.
             </p>
 
             <p className="mt-4 text-sm leading-6 text-[#282329]/80 sm:text-base sm:leading-7">
-              I’m an Information Systems graduate who values clear interfaces and thoughtful problem solving.
+              I'm Yasmin, an Information Systems graduate from Addis Ababa University and a full-stack developer interested in building practical, user-friendly web applications.
             </p>
 
             <p className="mt-3 text-sm leading-6 text-[#716775]">
-              My work spans independent and collaborative projects, where I keep learning by building.
+              Through independent and collaborative projects, I've explored both frontend and backend development, turning ideas into functional digital solutions while continuing to grow my skills.
             </p>
 
             <div className="mt-5 grid gap-2">
@@ -98,21 +84,16 @@ export default function About() {
                     <h3 className="text-xs font-semibold text-[#282329] sm:text-sm">
                       {item.title}
                     </h3>
-                    <p className="mt-0.5 text-[11px] leading-4 text-[#716775] sm:text-xs">
-                      {item.description}
-                    </p>
                   </div>
 
-                  <span className="text-sm text-[#D92D50] transition-transform group-hover:translate-x-1">
-                    â†—
-                  </span>
+                  <span aria-hidden="true" className="text-sm text-[#D92D50] transition-transform group-hover:translate-x-1">→</span>
                 </div>
               ))}
             </div>
 
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-[9px] font-semibold uppercase tracking-[0.15em] text-[#716775]">
-              <span>Listen first</span>
-              <span>Build with purpose</span>
+              <span>Understand the problem</span>
+              <span>Build thoughtfully</span>
               <span>Keep learning</span>
             </div>
           </div>
