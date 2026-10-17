@@ -70,6 +70,8 @@ export default function Hero() {
                 ? 'bg-[#59634C]'
                 : project.tone === 'blue'
                   ? 'bg-[#40586A]'
+                : project.tone === 'plum'
+                  ? 'bg-[#C77A3D]'
                   : 'bg-[#164B85]'
           }`}
           aria-live="polite"
@@ -95,26 +97,14 @@ export default function Hero() {
           </div>
 
           <div className="relative mt-14">
-            <p className="mb-3 text-xs text-white/75">{project.role}</p>
-
             <h2 className="editorial max-w-md text-4xl leading-[1.05] sm:text-5xl">
               {project.name}
             </h2>
 
             <p className="mt-4 max-w-sm text-sm leading-6 text-white/85">
-              {project.description}
+              {project.cardDescription ?? project.description}
             </p>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              {project.technologies.map((technology) => (
-                <span
-                  key={technology}
-                  className="border border-white/35 px-2.5 py-1 text-[9px] uppercase tracking-wider sm:text-[10px]"
-                >
-                  {technology}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
 

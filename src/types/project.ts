@@ -2,8 +2,11 @@ export type Project = {
   name: string;
   category: string;
   description: string;
-  role: 'Independent project' | 'Collaborative project';
+  cardDescription?: string;
   technologies: string[];
+  features?: string[];
+  links?: { label: string; url: string }[];
   number: string;
+  image: string;
   tone: 'vermilion' | 'olive' | 'blue' | 'plum';
 };
