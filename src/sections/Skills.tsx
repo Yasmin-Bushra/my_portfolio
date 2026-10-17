@@ -83,7 +83,7 @@ export default function Skills() {
     >
       <style>{css}</style>
 
-      <div className="mx-auto max-w-[1440px] px-5 py-14 sm:px-8 sm:py-20 lg:grid lg:grid-cols-[minmax(0,260px)_1fr] lg:items-center lg:gap-12 lg:px-16 lg:py-24">
+      <div className="mx-auto max-w-[1440px] px-5 py-10 sm:px-8 sm:py-14 lg:grid lg:grid-cols-[minmax(0,260px)_1fr] lg:items-center lg:gap-28 lg:px-16 lg:py-14">
         {/* Heading + legend */}
         <div>
           <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#D92D50]">
@@ -137,7 +137,7 @@ export default function Skills() {
         {/* Orbit for large screens */}
         <div
           aria-hidden="true"
-          className="orbit-stage relative mx-auto hidden h-[640px] w-[640px] lg:col-start-2 lg:block"
+          className="orbit-stage relative mx-auto hidden h-[600px] w-[600px] lg:col-start-2 lg:ml-16 lg:block"
         >
           {/* soft glow behind everything */}
           <div className="skills-orbit-glow absolute inset-0 bg-[radial-gradient(circle,rgba(252,231,236,0.9),rgba(252,231,236,0)_70%)]" />

@@ -50,7 +50,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-6 flex flex-wrap items-center gap-4">
-            <Button href="#projects" className="hero-cta group !min-h-11 !gap-4 !rounded-full !border !border-[#D92D50]/30 !bg-[#FCE7EC] !px-5 !text-[#7E2940] !shadow-none hover:!-translate-y-0.5 hover:!border-[#D92D50]/60 hover:!bg-[#F8D7E1]">
+            <Button href="#projects" className="hero-cta group !min-h-11 !gap-4 !rounded-full !border !border-[#7E2940] !bg-[#A51F3A] !px-5 !text-white !shadow-none hover:!-translate-y-0.5 hover:!border-[#68152D] hover:!bg-[#8F1B35]">
               Explore my work
               <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
             </Button>
@@ -73,7 +73,7 @@ export default function Hero() {
 
       {/* Interactive project preview */}
       <div
-        className="hero-preview-frame min-w-0 border border-[#E8D8CF] bg-[#FCE7EC] p-3 sm:p-5 lg:ml-auto lg:w-full lg:max-w-[570px]"
+        className="hero-preview-frame hidden min-w-0 overflow-hidden rounded-[2rem] border border-[#E8D8CF]/70 bg-white/25 p-2 lg:ml-auto lg:-mt-6 lg:block lg:w-full lg:max-w-[440px]"
         onMouseEnter={() => setIsPreviewPaused(true)}
         onMouseLeave={() => setIsPreviewPaused(false)}
         onFocusCapture={() => setIsPreviewPaused(true)}
@@ -85,16 +85,16 @@ export default function Hero() {
       >
         <div
           data-project-tone={project.tone}
-          className={`relative flex min-h-[320px] flex-col justify-between overflow-hidden p-6 text-[#FFF8F0] transition-colors duration-500 sm:min-h-[360px] sm:p-8 ${
+          className={`relative flex min-h-[290px] flex-col justify-between overflow-hidden rounded-2xl p-5 text-[#FFF8F0] transition-colors duration-500 sm:min-h-[320px] sm:p-6 ${
             project.tone === 'vermilion'
               ? 'bg-[#A51F3A]'
               : project.tone === 'olive'
                 ? 'bg-[#59634C]'
                 : project.tone === 'blue'
                   ? 'bg-[#40586A]'
-                : project.tone === 'plum'
-                  ? 'bg-[#C77A3D]'
-                  : 'bg-[#164B85]'
+                  : project.tone === 'plum'
+                    ? 'bg-[#C77A3D]'
+                    : 'bg-[#164B85]'
           }`}
           aria-live="polite"
           aria-atomic="true"
@@ -118,20 +118,19 @@ export default function Hero() {
             </span>
           </div>
 
-          <div className="relative mt-14">
-            <h2 className="editorial max-w-md text-4xl leading-[1.05] sm:text-5xl">
+          <div className="relative mt-10">
+            <h2 className="editorial max-w-md text-3xl leading-[1.05] sm:text-4xl">
               {project.name}
             </h2>
 
-            <p className="mt-4 max-w-sm text-sm leading-6 text-white/85">
+            <p className="mt-3 max-w-sm text-xs leading-5 text-white/85 sm:text-sm sm:leading-6">
               {project.cardDescription ?? project.description}
             </p>
-
           </div>
         </div>
 
         {/* Project selector */}
-        <div className="flex flex-col gap-4 pt-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 pt-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#716775] sm:text-[10px]">
             Explore projects
           </p>

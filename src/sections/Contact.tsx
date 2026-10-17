@@ -34,7 +34,7 @@ export default function Contact() {
       <div className="flex flex-col items-start gap-5 lg:items-end">
         <Button
           href="mailto:yasminbushraa@gmail.com"
-          className="w-full justify-between rounded-none px-5 shadow-[4px_4px_0_#28232922] sm:w-auto sm:min-w-52"
+          className="w-auto min-w-0 justify-between gap-4 rounded-none px-4 shadow-[4px_4px_0_#28232922] sm:min-w-52 sm:px-5"
         >
           <span className="inline-flex items-center gap-3">
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.7">
