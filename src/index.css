@@ -86,55 +86,134 @@ button {
 .portfolio-glow {
   z-index: 0;
   background:
-    radial-gradient(ellipse at 8% 4%, rgb(245 217 107 / 37%), transparent 34%),
-    radial-gradient(ellipse at 92% 20%, rgb(243 167 189 / 28%), transparent 31%),
-    radial-gradient(ellipse at 68% 82%, rgb(217 45 80 / 8%), transparent 28%),
-    linear-gradient(135deg, #FFF8F0 0%, #FFF8F0 55%, #FCE7EC 100%);
+    radial-gradient(ellipse at 8% 4%, rgb(245 217 107 / 19%), transparent 34%),
+    radial-gradient(ellipse at 92% 20%, rgb(243 167 189 / 15%), transparent 31%),
+    linear-gradient(135deg, #FFF9F5 0%, #FFF9F5 62%, #F7EEF0 100%);
+}
+
+.hero-preview-frame {
+  background-color: #F3E9E6;
+}
+
+.contact-gradient {
+  background:
+    radial-gradient(ellipse at 12% 90%, rgb(243 167 189 / 18%), transparent 32rem),
+    radial-gradient(ellipse at 90% 18%, rgb(245 217 107 / 14%), transparent 28rem),
+    linear-gradient(115deg, rgb(255 248 240 / 0%), rgb(252 231 236 / 55%));
 }
 
 [data-theme='dark'] {
   color-scheme: dark;
-  background-color: #17151a;
-  color: #f7f0eb;
+  background-color: #201b1c;
+  color: #f3e9df;
 }
 
 [data-theme='dark'] .portfolio-glow {
   background:
-    radial-gradient(ellipse at 8% 4%, rgb(217 45 80 / 13%), transparent 34%),
-    radial-gradient(ellipse at 92% 20%, rgb(199 122 61 / 12%), transparent 31%),
-    linear-gradient(135deg, #17151a 0%, #1b191e 58%, #272027 100%);
+    radial-gradient(ellipse at 10% 8%, rgb(243 167 189 / 9%), transparent 34%),
+    radial-gradient(ellipse at 88% 24%, rgb(199 122 61 / 7%), transparent 30%),
+    linear-gradient(135deg, #211c1d 0%, #282122 58%, #302625 100%);
+}
+
+[data-theme='dark'] .contact-gradient {
+  background:
+    radial-gradient(ellipse at 12% 90%, rgb(151 75 88 / 18%), transparent 32rem),
+    radial-gradient(ellipse at 90% 18%, rgb(157 105 62 / 10%), transparent 28rem),
+    linear-gradient(115deg, rgb(48 40 41 / 0%), rgb(63 44 47 / 42%));
 }
 
 [data-theme='dark'] [class*='bg-[#FFF8F0]'],
 [data-theme='dark'] [class*='bg-[#FBF7F2]'],
-[data-theme='dark'] [class*='bg-white/60'] {
-  background-color: #242127 !important;
+[data-theme='dark'] [class*='bg-white/60'],
+[data-theme='dark'] [class*='bg-white/70'] {
+  background-color: #302829 !important;
 }
 
 [data-theme='dark'] [class*='bg-[#FCE7EC]'] {
-  background-color: #2b2229 !important;
+  background-color: #382a2e !important;
+}
+
+[data-theme='dark'] .skills-card-header {
+  background-color: #30252b !important;
+}
+
+[data-theme='dark'] .skills-card-header [class*='text-[#A51F3A]'] {
+  color: #f3a7bd !important;
+}
+
+[data-theme='dark'] .skills-card {
+  background-color: #211f24 !important;
+}
+
+[data-theme='dark'] .skills-panel {
+  border-color: rgb(243 233 223 / 13%);
+  background-color: #2a2425;
+}
+
+[data-theme='dark'] .skills-panel li {
+  color: #d0c3bb;
+}
+
+[data-theme='dark'] .skill-orbit-pill {
+  border-color: rgb(243 233 223 / 18%);
+  background-color: #352c2d !important;
+  color: #f0e4da !important;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 22%);
+}
+
+[data-theme='dark'] .skills-orbit-glow {
+  background: radial-gradient(circle, rgb(143 76 83 / 24%), transparent 70%);
+}
+
+[data-theme='dark'] .skills-mobile-list ul {
+  color: #d0c3bb;
 }
 
 [data-theme='dark'] [class*='text-[#282329]'] {
-  color: #f7f0eb !important;
+  color: #f3e9df !important;
 }
 
 [data-theme='dark'] [class*='text-[#716775]'] {
-  color: #c2b7c1 !important;
+  color: #c6b6b0 !important;
 }
 
 [data-theme='dark'] [class*='border-[#E8D8CF]'],
 [data-theme='dark'] [class*='border-[#E9DCD3]'],
 [data-theme='dark'] [class*='border-[#282329]/'] {
-  border-color: rgb(247 240 235 / 16%) !important;
+  border-color: rgb(243 233 223 / 15%) !important;
 }
 
 [data-theme='dark'] .hero-title {
   text-shadow: none;
 }
 
+[data-theme='dark'] .hero-preview-frame {
+  border-color: rgb(243 233 223 / 14%);
+  background-color: #2b2425 !important;
+}
+
+[data-theme='dark'] .hero-preview-frame [data-project-tone='vermilion'] {
+  background-color: #643640;
+}
+
+[data-theme='dark'] .hero-preview-frame [data-project-tone='olive'] {
+  background-color: #424638;
+}
+
+[data-theme='dark'] .hero-preview-frame [data-project-tone='blue'] {
+  background-color: #394650;
+}
+
+[data-theme='dark'] .hero-preview-frame [data-project-tone='plum'] {
+  background-color: #574032;
+}
+
+[data-theme='dark'] .hero-preview-frame [data-project-tone] > [aria-hidden='true'] {
+  border-color: rgb(243 233 223 / 17%);
+}
+
 [data-theme='dark'] .hero-splash::before {
-  opacity: 0.3;
+  opacity: 0.26;
 }
 
 .hero-splash {

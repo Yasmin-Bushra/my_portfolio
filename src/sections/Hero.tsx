@@ -73,7 +73,7 @@ export default function Hero() {
 
       {/* Interactive project preview */}
       <div
-        className="min-w-0 border border-[#E8D8CF] bg-[#FCE7EC] p-3 sm:p-5 lg:ml-auto lg:w-full lg:max-w-[570px]"
+        className="hero-preview-frame min-w-0 border border-[#E8D8CF] bg-[#FCE7EC] p-3 sm:p-5 lg:ml-auto lg:w-full lg:max-w-[570px]"
         onMouseEnter={() => setIsPreviewPaused(true)}
         onMouseLeave={() => setIsPreviewPaused(false)}
         onFocusCapture={() => setIsPreviewPaused(true)}
@@ -84,6 +84,7 @@ export default function Hero() {
         }}
       >
         <div
+          data-project-tone={project.tone}
           className={`relative flex min-h-[320px] flex-col justify-between overflow-hidden p-6 text-[#FFF8F0] transition-colors duration-500 sm:min-h-[360px] sm:p-8 ${
             project.tone === 'vermilion'
               ? 'bg-[#A51F3A]'
