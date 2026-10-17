@@ -92,6 +92,51 @@ button {
     linear-gradient(135deg, #FFF8F0 0%, #FFF8F0 55%, #FCE7EC 100%);
 }
 
+[data-theme='dark'] {
+  color-scheme: dark;
+  background-color: #17151a;
+  color: #f7f0eb;
+}
+
+[data-theme='dark'] .portfolio-glow {
+  background:
+    radial-gradient(ellipse at 8% 4%, rgb(217 45 80 / 13%), transparent 34%),
+    radial-gradient(ellipse at 92% 20%, rgb(199 122 61 / 12%), transparent 31%),
+    linear-gradient(135deg, #17151a 0%, #1b191e 58%, #272027 100%);
+}
+
+[data-theme='dark'] [class*='bg-[#FFF8F0]'],
+[data-theme='dark'] [class*='bg-[#FBF7F2]'],
+[data-theme='dark'] [class*='bg-white/60'] {
+  background-color: #242127 !important;
+}
+
+[data-theme='dark'] [class*='bg-[#FCE7EC]'] {
+  background-color: #2b2229 !important;
+}
+
+[data-theme='dark'] [class*='text-[#282329]'] {
+  color: #f7f0eb !important;
+}
+
+[data-theme='dark'] [class*='text-[#716775]'] {
+  color: #c2b7c1 !important;
+}
+
+[data-theme='dark'] [class*='border-[#E8D8CF]'],
+[data-theme='dark'] [class*='border-[#E9DCD3]'],
+[data-theme='dark'] [class*='border-[#282329]/'] {
+  border-color: rgb(247 240 235 / 16%) !important;
+}
+
+[data-theme='dark'] .hero-title {
+  text-shadow: none;
+}
+
+[data-theme='dark'] .hero-splash::before {
+  opacity: 0.3;
+}
+
 .hero-splash {
   position: relative;
   isolation: isolate;
