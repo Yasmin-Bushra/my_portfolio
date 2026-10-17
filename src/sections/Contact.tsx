@@ -9,12 +9,11 @@ export default function Contact() {
         <p className="mt-6 max-w-lg text-sm leading-7 text-[#716775]">Iâ€™m open to conversations about freelance collaborations and full-time opportunities. Iâ€™d love to hear what youâ€™re working on.</p>
       </div>
       <div className="flex flex-col items-start gap-4 lg:items-end">
-        <Button href="mailto:YOUR_EMAIL_HERE">Email me <span aria-hidden="true">â†—</span></Button>
+        <Button href="mailto:yasminbushraa@gmail.com">Email me <span aria-hidden="true">â†—</span></Button>
         <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs">
           <a className="underline decoration-[#E8D8CF] underline-offset-4 transition-colors hover:text-[#D92D50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D92D50]" href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" rel="noreferrer">LinkedIn â†—</a>
           <a className="underline decoration-[#E8D8CF] underline-offset-4 transition-colors hover:text-[#D92D50] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D92D50]" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noreferrer">GitHub â†—</a>
         </div>
-        <p className="max-w-xs text-left text-[10px] leading-5 text-[#716775] lg:text-right">Replace <code className="bg-transparent p-0 text-[10px]">YOUR_EMAIL_HERE</code>, <code className="bg-transparent p-0 text-[10px]">YOUR_LINKEDIN_USERNAME</code>, and <code className="bg-transparent p-0 text-[10px]">YOUR_GITHUB_USERNAME</code> in Contact.tsx with your details.</p>
       </div>
     </section>
   );
